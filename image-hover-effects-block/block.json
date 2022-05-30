@@ -1,0 +1,8 @@
+{
+	"name": "block/image-hover-effects-block",
+	"title": "Image Hover Effects Block",
+	"description": "Add over 40+ stunning image hover effects to Gutenberg editor. Easily customize title, content and effects with intuitive interface.",
+	"category": "widgets",
+	"editorScript": "file:./build/index.js",
+	"style": "file:./assets/css/style.css"
+}

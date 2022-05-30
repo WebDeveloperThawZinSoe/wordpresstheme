@@ -1,0 +1,597 @@
+/* --- Slider Controls ---*/
+/* --- Link To Control --- */
+/* --- Alignment Controls --- */
+/* --- Color Picker Controls --- */
+/* --- Typography  --- */
+/* --- Icon --- */
+/* --- CSS BOX MODEL WIDGET --- */
+/* --- PRO Features Panel CSS ---*/
+.eihe-caption div {
+    background: transparent;
+}
+.ihe-panel.components-panel {
+    border: 0 none;
+}
+.ihe-block-control {
+    margin: 10px 0 20px;
+}
+.components-panel__body .ihe-block-control:last-child {
+    margin-bottom: 10px;
+}
+.ihe-block-control select {
+    margin: 0;
+}
+.ihe-flexbox-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ihe-block-control select,
+.ihe-block-control input,
+.ihe-popup-control svg {
+    cursor: pointer;
+}
+.ihe-block-control select,
+.ihe-block-control input[type="number"],
+.ihe-block-control input[type="text"],
+.input_inline input[type="number"] {
+    border: 1px solid #d5dadf;
+}
+.ihe-block-control select:hover,
+.ihe-block-control input[type="number"]:hover,
+.ihe-block-control input[type="text"]:hover,
+.input_inline input[type="number"]:hover{
+    border: 1px solid #a4afb7;
+}
+.ihe-block-control label,
+.ihe-block-control .components-base-control label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.ihe-flexbox-control label {
+    margin-bottom: 0;
+}
+.ihe-block-control .components-base-control {
+    width: 100%;
+}
+.ihe-group-controls {
+    padding: 20px;
+}
+.eihe-upload {
+    display: flex;
+}
+.eihe-upload svg {
+    padding: 0;
+    border-radius: 4px;
+    height: 30px;
+    width: 30px; 
+}
+/* --- Slider Controls */
+.ihe-block-control.dnlslider label {
+    display: inline;
+    margin: 0;
+}
+.ihe-block-control.dnlslider .components-base-control,
+.ihe-block-control.dnlslider .components-radio-control__option {
+    margin: 0;
+}
+.ihe-block-control.dnlslider .components-base-control__field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+.ihe-block-control.dnlslider .components-base-control__field input[type="radio"]{
+    min-width: 8px;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+.ihe-block-control.dnlslider .components-base-control__field input[type="radio"]:checked:before {
+    content: none;
+    display: none;
+}
+
+/* ---- Link To Control --- */
+.input_inline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.input_inline .span_icon {
+    padding: 5px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+.ihe-panel .input_inline .components-base-control__field {
+    padding: 0;
+    border-right: 0 none;
+}
+.input_inline .components-base-control__field,
+.input_inline input[type="text"]{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 4px;
+    margin: 0;
+    border-right: 0 none;
+}
+.ihe-panel .input_inline input:focus,
+.ihe-panel .input_inline input:hover {
+    border-right: 0 none;
+    box-shadow: none;
+}
+.ihe-panel .input_inline input:focus{
+    border-color: rgb(149, 214, 240);
+}
+.ihe-panel .input_inline .components-base-control {
+    margin: 0;
+}
+.link-attributes {
+    display: none;
+    margin: 10px 0 0;
+}
+.link-attributes .components-base-control__field {
+    display: flex;
+}
+.link-attributes.visible {
+    display: block;
+}
+.ihe-block-control.iheg-linkto .link-attributes .components-base-control,
+.link-attributes label {
+    margin: 0;
+}
+
+/* --- Alignment Controls */
+.ihe-block-control.alignment .components-toolbar {
+    border-radius: 5px;
+    padding: 0 3px;
+}
+.ihe-block-control.alignment .components-toolbar div,
+.ihe-block-control.alignment .ihe-vertical-align > div > div {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.ihe-block-control .ihe-horizontal-align div {
+    width: 100%;
+    min-height: 26px;
+}
+.ihe-block-control .ihe-horizontal-align div button.components-button.has-icon {
+    position: relative;
+    width: 100%;
+    padding: 3px 20px 3px 3px;
+    height: 26px;
+}
+.ihe-block-control .ihe-horizontal-align button.components-button.has-icon:before,
+.components-popover__content button.components-button:focus:not(:disabled) {
+    outline: 0;
+    box-shadow: none;
+}
+.ihe-block-control .ihe-horizontal-align div button.components-button.has-icon:after {
+    content: '';
+    position: absolute;
+    right: 4px;
+    bottom: 0;
+    transform: translateY(-50%);
+    border: 5px solid #555;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.ihe-block-control .ihe-horizontal-align div .components-button:not(:disabled):not([aria-disabled=true]):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):hover,
+.ihe-block-control .ihe-horizontal-align div .components-button:not(:disabled):not([aria-disabled=true]):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):focus {
+    box-shadow: none;
+}
+.ihe-block-control .ihe-horizontal-align div svg {
+    width: 100%;
+    padding: 0;
+    border-radius: 4px;
+    height: 20px;
+}
+.ihe-block-control .ihe-horizontal-align div button:focus svg {
+    box-shadow: none !important;
+}
+.ihe-block-control .ihe-horizontal-align div button:hover > svg {
+    box-shadow: none !important;
+    background: #f1f1f1;
+}
+.ihe-block-control.alignment  .ihe-vertical-align > div {
+    width: 100%;
+    margin: 0;    
+    display: flex;
+    border: 1px solid #d5dadf;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+.ihe-block-control.alignment .ihe-vertical-align > div > div {  
+    padding: 3px 0;
+}
+.ihe-block-control .ihe-vertical-align input {
+    display: none;
+}
+.ihe-block-control .ihe-vertical-align label {
+    position: relative;
+    padding: 0px 0;
+    border-radius: 4px;
+    margin: 0;
+    width: 76px;
+    height: 22px;
+    font-size: 0;
+}
+.ihe-block-control .ihe-vertical-align label:before {    
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.ihe-block-control .ihe-vertical-align label:hover {
+    background: #f1f1f1;
+}
+.ihe-block-control .ihe-vertical-align label:focus {
+    outline: 0 none;
+}
+
+.ihe-block-control.alignment .ihe-vertical-align input:checked + label {
+    background: #555d66;
+}
+.ihe-block-control.alignment .ihe-vertical-align label:before {
+    background-size: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ihe-block-control.alignment .ihe-vertical-align > div > div:nth-child(1) > label:before {
+   background-image: url('../img/v-top.svg');
+}
+.ihe-block-control.alignment .ihe-vertical-align > div > div:nth-child(1) > input:checked + label:before {
+    background-image: url('../img/v-top-o.svg');
+}
+.ihe-block-control.alignment .ihe-vertical-align > div > div:nth-child(2) > label:before {
+    background-image: url('../img/v-center.svg');
+}
+.ihe-block-control.alignment .ihe-vertical-align > div > div:nth-child(2) > input:checked + label:before {
+    background-image: url('../img/v-center-o.svg');
+}
+.ihe-block-control.alignment .ihe-vertical-align > div > div:nth-child(3) > label:before {
+    background-image: url('../img/v-bottom.svg');
+}
+.ihe-block-control.alignment .ihe-vertical-align > div > div:nth-child(3) > input:checked + label:before {
+    background-image: url('../img/v-bottom-o.svg');
+}
+
+/* ----  Color Picker Controls---- */
+.ihe-colorbox {
+    min-width: 50px;
+    min-height: 28px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #d5dadf;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.ihe-colorbox:hover {
+    border: 1px solid #a4afb7;
+}
+.ihe-group-controls.ihe-colorpicker .components-color-picker__inputs-wrapper label {
+    display: none
+}
+.ihe-group-controls.ihe-colorpicker .components-color-picker__body {
+    padding: 10px;
+}
+.ihe-group-controls.ihe-colorpicker  .components-color-picker__inputs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ihe-group-controls.ihe-colorpicker .components-color-picker__inputs-field {
+    margin-bottom: 0px;
+}
+.ihe-group-controls.ihe-colorpicker .components-color-picker__inputs-field input[type="number"] {
+    height: 31px;
+}
+.components-color-picker__inputs-toggle .components-icon-button {
+    padding: 6px;
+}
+
+/* --- Typography --- */
+.block-editor .components-popover__content {
+    min-width: 300px;
+}
+.ihe-popup-control.typography-group {
+    border: 1px solid #d5dadf;
+    border-radius: 5px;
+    cursor: pointer;    
+    min-width: 50px;
+}
+.ihe-popup-control.typography-group div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 26px;
+}
+.ihe-popup-control.typography-group:hover{
+    border-color: #a4afb7;
+}
+.ihe-title-typo .components-select-control__input,
+.ihe-desc-typo .components-select-control__input {
+    position: relative;
+    /* width: 130px; */
+    width: 100%;
+}
+.ihe-title-typo .ihe-block-control,
+.ihe-desc-typo .ihe-block-control {
+    margin-bottom: 0;
+}
+.ihe-title-typo .block_input_label,
+.ihe-desc-typo .block_input_label {
+    margin-bottom: 8px;
+}
+.ihe-title-typo .ihe-flexbox-control:not(:first-child),
+.ihe-desc-typo .ihe-flexbox-control:not(:first-child) {
+    margin-top: 15px;
+}
+.ihe-title-typo .ihe-flexbox-control:first-child,
+.ihe-desc-typo .ihe-flexbox-control:first-child {
+    margin-top: 8px;
+}
+
+/* --- Icon ---- */
+
+.edit-post-visual-editor .eihe-box i {
+    font-style: normal;
+}
+.ihe-block-control .rfip.rfip--default {
+    width: 100%;
+    margin: 0;
+}
+.ihe-block-control .rfipbtn.rfipbtn--default {
+    width: 100%;
+    min-height: 28px;
+    height: 28px;
+    border-radius: 5px;
+    border-color: #d5dadf;
+    box-shadow: none;
+}
+.ihe-block-control .rfipbtn.rfipbtn--default .rfipbtn__button {
+    background-color: transparent;
+    width: auto;
+    border-left: 0;
+}
+.rfipbtn--default .rfipbtn__icon--empty {
+    margin-left: 4px;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.ihe-block-control .rfipbtn__current {
+    flex: 1;
+    justify-content: flex-start;
+}
+.ihe-block-control .rfipbtn__icon {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+}
+.ihe-block-control .rfipbtn__button i {
+    font-size: 15px;
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900;
+    margin-right: 0;
+    transform: scale(1.1) !important;
+    transition-duration: 0s;
+    width: auto;
+}
+.ihe-block-control .rfipbtn__button i:before {
+    font-family: 'Font Awesome 5 Free' !important;
+    content: '\f0d7';
+    font-size: 15px;
+    color: #808080;
+}
+.ihe-block-control .rfipbtn__button--open i::before { 
+    font-family: 'Font Awesome 5 Free' !important;
+    content: '\f0d7';
+    font-size: 15px;
+}
+.ihe-block-control .rfipbtn--default .rfipbtn__del {
+    height: 16px;
+    background: transparent;
+}
+.ihe-block-control .rfipbtn.rfipbtn--default .rfipbtn__button:active {
+    background: transparent;    
+    box-shadow: none;
+}
+.ihe-block-control .rfipbtn.rfipbtn--default:hover {
+    border-color: #a4afb7;
+}
+/*---CSS BOX MODEL WIDGET---*/
+
+.css-switch {
+    width: 42px;
+    float: right;
+}
+.css-dnl {
+    display: flex;
+    flex-direction: column;
+}
+.css-dnl.css-dnl-row .css-col-1 {
+    display: flex;
+    align-items: center;
+}
+.css-dnl-indvl {
+    display: inline-flex;
+    width: 100%;
+    align-items: flex-start;
+}
+.css-col-1 {
+    position: relative;
+    width: 100%;
+    margin: 0 0 5px;
+}
+.css-col-2 {
+    display: flex;
+    align-items: center;
+}
+.css-dnl input[type="number"]:not(.components-range-control__number) {
+    width: 100% !important;
+    margin: 0;
+    padding: 5px;
+    border-right: 0 none;
+    text-align: center;
+}
+.css-dnl input[type="number"]:not(.components-range-control__number):hover,
+.css-dnl input[type="number"]:not(.components-range-control__number):focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    outline: 0 none;
+    border: 1px solid #ccc;
+    border-right: 0 none;
+}
+.css-switch .css-link .components-checkbox-control__input-container {
+    display: none;
+}
+.css-switch .css-link label {
+    padding: 4px 14px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    margin-left: 0;
+    opacity: 1;
+    display: block;
+    background: url('../img/link.png') no-repeat scroll;
+    height: 30px;
+    background-position: 0 3px;
+    background-size: 200%;
+    background-color: #ffffff;
+    font-size: 0;
+}
+.css-switch .css-link.checked label {
+    background-position: -35px 2px;
+    background-color: #4e4e4e;
+    border: 1px solid #4e4e4e;
+    border-left: 0 none;
+    color: #ffffff;
+}
+.css-switch .css-link.checked label:focus {
+    border: 0 none; 
+}
+.css-dnl-indvl .components-base-control input {
+    border-radius: 0;
+    border-right: 0 none;
+}
+.css-dnl-indvl .components-base-control:first-child input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* Pro Tab */
+.eheg-pro-prepare {
+    line-height: 1.5;
+    text-align: center;
+}
+.eheg-pro-prepare div {
+    font-size: 16px;
+    font-family: Roboto,Arial,Helvetica,Verdana,sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 15px 0;
+}
+.eheg-pro-prepare p {
+    width: 100%;
+}
+.eheg-pro-prepare a {
+    background-color: #2297CA;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.1);
+    box-shadow: 0 0 1px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.1);
+    color: white;
+    padding: 8px 7px;
+    border-radius: 5px;
+    display: inline-block;    
+    margin: 12px 0 10px;
+    opacity: 1;
+    text-decoration: none;
+}
+/* Drop Down Popover Control CSS */
+.ihe-control-container .components-popover__content {
+    -webkit-box-shadow: 0 2px 15px rgba(0,0,0,.3);
+    box-shadow: 0 2px 15px rgba(0,0,0,.3);
+    border-radius: 3px;
+}
+/* Select Control UI CSS */
+.select-default {
+    margin-top: 15px;
+}
+
+.select-default select {
+    background: none;
+}
+.select-default select,
+.iheg-icon-selector .rfipbtn.rfipbtn--default {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    min-height: 30px;
+    -webkit-appearance: none;
+    padding: 0 10px;
+    border: 1px solid #d0d0d0;
+}
+
+.select-default select:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.select-default .components-base-control__field {
+    position: relative;
+}
+
+.select-default .components-base-control__field:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    margin-top: -2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #808080 transparent transparent transparent;
+    z-index: 99999;
+}
+
+/* PRO Features Panel CSS */
+.components-panel__body.proeffects button {
+    position: relative;
+    color: #0085ba !important;
+}
+.components-panel__body.proeffects button:after {
+    position: relative;
+    content: '➤';
+    right: -5px;
+    color: #0085ba;
+    top: 1px;
+}
+.wp-block-eihe-image img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.wp-block-eihe-image button.image__toggle {
+    display: block;
+    width: 100%;
+    min-height: 90px;
+    background: #fafafa;
+    font-size: 1.2em;
+    border: 2px dashed #bbb;
+}
