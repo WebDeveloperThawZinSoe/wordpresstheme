@@ -1,1 +1,0 @@
-<?php return array('dependencies' => array('react', 'react-dom', 'wp-blocks', 'wp-editor', 'wp-element', 'wp-components', 'wp-polyfill')); ?>
